@@ -10,7 +10,11 @@ export default function Journey() {
           label="Journey"
           title={
             <>
-              Where I’ve been <em>growing</em> and <em>polishing</em> myself
+              Where I’ve been
+              <br />
+              <span className="keep-line">
+                <em>growing</em> and <em>refining</em> myself
+              </span>
             </>
           }
         />

@@ -30,8 +30,7 @@ export default function Contact() {
         </h2>
 
         <p className="contact-lead reveal" style={{ "--d": "160ms" } as React.CSSProperties}>
-          I’m currently looking for full-time frontend roles and freelance projects. My inbox is
-          always open. 
+        My inbox is always open. 
         </p>
 
         <div className="contact-actions reveal" style={{ "--d": "240ms" } as React.CSSProperties}>

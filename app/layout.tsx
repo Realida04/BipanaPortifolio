@@ -21,10 +21,10 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${profile.name} — ${profile.role}`,
+  title: `${profile.name}`,
   description: profile.intro,
   openGraph: {
-    title: `${profile.name} — ${profile.role}`,
+    title: `${profile.name}`,
     description: profile.intro,
     type: "website",
   },
@@ -37,7 +37,6 @@ export const viewport: Viewport = {
   ],
 };
 
-// Runs before paint so the saved theme never flashes.
 const themeScript = `(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.dataset.theme=t;}catch(e){}})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

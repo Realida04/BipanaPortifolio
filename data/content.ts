@@ -5,11 +5,11 @@ export const profile = {
   firstName: "Bipana",
   role: "Frontend Software Engineer",
   location: "Kathmandu, Nepal",
-  availability: "Open to frontend roles — 2026",
+  availability: "Open to Frontend Developement",
   email: "bipanapariyar04@gmail.com",
   resume: "/bipanaPariyarResume.pdf",
   intro:
-    "I'm a frontend software engineer who sits right where design meets engineering. I turn ideas into fast, accessible, beautifully detailed interfaces. The kind people enjoy using without ever noticing why.",
+    "I'm a frontend developer and designer. I love designing in Figma and build in React and Next.js, turning ideas into responsive, user-friendly web apps.",
   socials: [
     { label: "GitHub", href: "https://github.com/Realida04" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/bipanapariyar" },
@@ -20,8 +20,8 @@ export const profile = {
 export const stats = [
   { value: "1", label: " year Experience in Development" },
   { value: "5+", label: "Projects created" },
-  { value: "1.5", label: "years building for the web" },
-  { value: "∞", label: "cups of chiya, lovingly consumed" },
+  { value: "1.5", label: "years building Websites. " },
+  
 ];
 
 export const marquee = [
@@ -30,7 +30,7 @@ export const marquee = [
   "TypeScript",
   "Tailwind CSS",
   "Figma",
-  "Learning .NET",
+  ".NET",
   "HTML/CSS",
 ];
 
@@ -123,16 +123,16 @@ export const projects: Project[] = [
 
 export const principles = [
   {
-    title: "Pixel-precise",
-    body: "Spacing, rhythm and type scale matter. I sweat the 1px details so the whole feels effortless.",
+    title: "Design to code",
+    body: "I design in Figma, then build it pixel for pixel in React and Next.js.",
   },
   {
-    title: "Accessible by default",
-    body: "Semantic HTML, focus states and contrast aren’t extras — they’re where I start.",
+    title: "Hands-on experience",
+    body: "Built responsive React apps and integrated REST APIs as an intern at Inspire Nepal.",
   },
   {
-    title: "Built to perform",
-    body: "Fast first paint, lean bundles and smooth 60fps motion on every device.",
+    title: "Always learning",
+    body: "Finishing my BIT at Purbanchal University while exploring .NET and Python.",
   },
 ];
 
@@ -142,16 +142,13 @@ export const skills = [
     items: ["HTML5", "CSS3", "JavaScript", "TypeScript"],
   },
   {
-    group: "Frameworks",
-    items: ["React.js", "Next.js"],
+    group: "Frameworks & Tools",
+    items: ["React.js", "Next.js (App Router)", "Tailwindcss", "Figma"]
   },
+  
   {
-    group: "Styling & Motion",
-    items: ["Tailwind CSS", "Boolstrap"]
-  },
-  {
-    group: "Tooling & Craft",
-    items: ["Figma", "Git & GitHub"],
+    group: "Version Control",
+    items: [ "Git & GitHub"],         
   },
   {
     group: "Learning & Exposure",
@@ -162,9 +159,9 @@ export const skills = [
 export const journey = [
   {
     period: "Sept 2025 — Dec 2025",
-    title: "Internship",
+    title: "Solution Developer (Intern)",
     org: "Inspire Nepal",
-    body: "Built a softwate with react.js and .NET for our community Partner. Introduced a shared component library that cut new-page build time in half.",
+    body: "Developed responsive React applications, integrated REST APIs, and worked with SQL databases while gaining experience in .NET, Git, and collaborative software development."
   },
   {
     period: "Jan 2024 — Dec 2024",
@@ -180,7 +177,3 @@ export const journey = [
   },
 ];
 
-export const currently = {
-  learning: "WebGL & three.js",
-  reading: "Refactoring UI",
-};

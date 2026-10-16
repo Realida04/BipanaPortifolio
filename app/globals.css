@@ -619,32 +619,6 @@ svg {
   }
 }
 
-.badge {
-  position: absolute;
-  left: -46px;
-  bottom: 40px;
-  width: 120px;
-  height: 120px;
-  padding: 6px;
-  border-radius: 50%;
-  background: var(--ink);
-  fill: var(--on-ink);
-  font-family: var(--font-mono), monospace;
-  font-size: 9.5px;
-  letter-spacing: 0.18em;
-  animation: spin 18s linear infinite;
-  box-shadow: var(--shadow-lg);
-}
-.badge .badge-star {
-  font-size: 22px;
-  fill: var(--accent);
-}
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .chip {
   position: absolute;
   padding: 8px 14px;
@@ -800,6 +774,12 @@ svg {
   letter-spacing: -0.025em;
   max-width: 14ch;
   text-wrap: balance;
+}
+.section-title:has(.keep-line) {
+  max-width: none;
+}
+.keep-line {
+  white-space: nowrap;
 }
 .section-aside {
   max-width: 34ch;
@@ -1346,80 +1326,40 @@ svg {
    About
    ========================================================================== */
 
-.about-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  gap: clamp(40px, 7vw, 100px);
-  align-items: start;
-}
-.about-copy {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  color: var(--ink-2);
-}
 .about-lead {
+  max-width: 30ch;
   font-family: var(--font-serif), Georgia, serif;
-  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
-  line-height: 1.22;
+  font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
   color: var(--ink);
-  letter-spacing: -0.01em;
-}
-.currently {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 12px;
-}
-.currently > div {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 18px 20px;
-  border-radius: 16px;
-  background: var(--card);
-  border: 1px solid var(--line);
-}
-.currently .mono {
-  color: var(--muted);
-}
-.currently strong {
-  font-weight: 500;
-  color: var(--ink);
+  text-wrap: pretty;
 }
 .principles {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(24px, 4vw, 56px);
+  margin-top: clamp(56px, 8vw, 96px);
 }
 .principle {
-  position: relative;
-  padding: 28px;
-  border-radius: var(--radius);
-  background: var(--card);
-  border: 1px solid var(--line);
-  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease), border-color 0.4s;
-}
-.principle:hover {
-  transform: translateX(-6px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--line-strong);
+  padding-top: 22px;
+  border-top: 1px solid var(--line-strong);
 }
 .principle-num {
-  position: absolute;
-  top: 28px;
-  right: 28px;
+  display: block;
+  margin-bottom: 14px;
   color: var(--accent);
 }
 .principle h3 {
   font-family: var(--font-serif), Georgia, serif;
   font-weight: 400;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   line-height: 1.1;
   margin-bottom: 8px;
 }
 .principle p {
-  color: var(--ink-2);
+  max-width: 28ch;
+  color: var(--muted);
   font-size: 0.97rem;
 }
 
@@ -1663,7 +1603,7 @@ main,
     border-top: 1px solid var(--line);
   }
   .project,
-  .about-grid {
+  .principles {
     grid-template-columns: minmax(0, 1fr);
   }
   .project:nth-child(even) .project-media {
@@ -1675,11 +1615,8 @@ main,
   body {
     font-size: 16px;
   }
-  .badge {
-    width: 96px;
-    height: 96px;
-    left: -12px;
-    bottom: 24px;
+  .keep-line {
+    white-space: normal;
   }
   .chip-a {
     right: -6px;
@@ -1694,8 +1631,7 @@ main,
   .stat:nth-child(even) {
     padding-left: 16px;
   }
-  .skills-grid,
-  .currently {
+  .skills-grid {
     grid-template-columns: minmax(0, 1fr);
   }
   .timeline-item {
