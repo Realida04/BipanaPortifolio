@@ -15,7 +15,7 @@ export default function About() {
           }
         />
 
-        <p className="about-lead reveal">{profile.intro}</p>
+        {/* <p className="about-lead reveal">{profile.intro}</p> */}
 
         <ul className="principles">
           {principles.map((p, i) => (

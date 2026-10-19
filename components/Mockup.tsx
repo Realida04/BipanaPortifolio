@@ -78,14 +78,14 @@ function Travel() {
   return (
     <div className="mk mk-travel">
       <div className="mk-hero">
-        <span className="mk-hero-title">Find your next escape</span>
+        <span className="mk-hero-title">Jadoo</span>
         <span className="mk-search">
-          <span>Pokhara · 2 guests</span>
+          <span>Best destination around the World</span>
           <span className="mk-search-btn">Search</span>
         </span>
       </div>
       <div className="mk-cards">
-        {["Lakeside Lodge", "Cloud Retreat", "Pine House"].map((t, i) => (
+        {["ROme, Italy", "London, Uk", "Full Europe"].map((t, i) => (
           <div key={t} className="mk-card">
             <span className={`mk-img mk-img-${i}`} />
             <span className="mk-text">{t}</span>
@@ -101,7 +101,7 @@ function Notes() {
   return (
     <div className="mk mk-notes">
       <aside className="mk-list">
-        {["Morning pages", "Project ideas", "Reading list", "Recipes"].map((t, i) => (
+        {["Home", "Resturant", "Special Offers", "Track Order"].map((t, i) => (
           <div key={t} className={`mk-note ${i === 1 ? "is-active" : ""}`}>
             <span className="mk-text">{t}</span>
             <L w="70%" s="sm" />
@@ -109,7 +109,8 @@ function Notes() {
         ))}
       </aside>
       <div className="mk-editor">
-        <span className="mk-h"># Project ideas</span>
+        <span className="mk-h">Order.UK</span>
+        <p>Online Food Delivery App</p>
         <L w="92%" />
         <L w="84%" />
         <L w="60%" />

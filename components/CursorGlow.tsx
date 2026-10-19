@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-// A soft blush glow that trails the pointer on desktop.
+
 export default function CursorGlow() {
   const ref = useRef<HTMLDivElement>(null);
 

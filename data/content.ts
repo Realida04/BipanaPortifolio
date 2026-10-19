@@ -1,4 +1,4 @@
-// All portfolio content lives here. Edit this file to make the site yours.
+
 
 export const profile = {
   name: "Bipana Pariyar",
@@ -40,11 +40,9 @@ export type Project = {
   title: string;
   kicker: string;
   description: string;
-  role: string;
-  year: string;
   stack: string[];
   highlights: string[];
-  live?: string;
+  live: string;
   code?: string;
   tint: "sage" | "lilac" | "peach" | "blush";
   mock: MockVariant;
@@ -56,15 +54,14 @@ export const projects: Project[] = [
     kicker: "Plant-care analytics dashboard",
     description:
       "A app where the user can view the food available and Order it.",
-    role: "Design & Frontend",
     year: "2026",
     stack: ["Next.js", "TypeScript", "Tailwind"],
     highlights: [
       "Reduced dashboard load time by 42% with route-level code splitting",
       "Fully keyboard-navigable charts with screen-reader summaries",
     ],
-    live: "#",
-    code: "#",
+    live: "https://github.com/Realida04/E-Commerce-Website",
+    
     tint: "sage",
     mock: "dashboard",
   },
@@ -73,48 +70,47 @@ export const projects: Project[] = [
     kicker: "Design system & component library",
     description:
       "A themeable component library of 40+ accessible primitives, documented in Storybook and published to npm — the single source of truth for a product team’s UI.",
-    role: "Frontend Engineering",
+ 
     year: "2025",
     stack: ["React", "TypeScript", "Storybook", "Radix"],
     highlights: [
       "Design tokens synced from Figma to code",
       "WCAG 2.2 AA across every component, tested with axe",
     ],
-    live: "#",
+    live: "https://github.com/Realida04/E-Commerce-Website",
     code: "#",
     tint: "lilac",
     mock: "system",
   },
   {
-    title: "Wander",
-    kicker: "Travel booking experience",
+    title: "Jadoo",
+    kicker: " Static Travel Website ",
     description:
-      "An immersive booking flow for boutique stays in the Himalayas — rich imagery, fluid transitions and a checkout that feels as relaxing as the trip itself.",
-    role: "Frontend & Interaction",
-    year: "2025",
-    stack: ["Next.js", "Framer Motion", "Zustand", "Mapbox"],
+      "Discover amazing destinations, explore new cultures, and create unforgettable memories. Your next adventure starts here!",
+
+ 
+    stack: ["Next.js", "Tailwind.css"],
     highlights: [
       "Shared-element page transitions with zero layout shift",
       "Checkout completion improved in usability tests",
     ],
-    live: "#",
+    live: "https://github.com/Realida04/TravelWebsite",
     code: "#",
     tint: "peach",
     mock: "travel",
   },
   {
-    title: "Kalam",
-    kicker: "Offline-first markdown notes",
+    title: "Order.UK",
+    kicker: "Online Food Delivery App",
     description:
-      "A distraction-free notes app that works fully offline. Writing syncs in the background, and the editor stays snappy even with thousands of notes.",
-    role: "Solo project",
-    year: "2024",
-    stack: ["React", "IndexedDB", "PWA", "Vite"],
+      "A Online based food delivery app, where the user can order their prefered food. ",
+    year: "",
+    stack: ["Next.js", "Tailwindcss"],
     highlights: [
-      "Installable PWA with background sync",
-      "Virtualised note list handles 10k+ items smoothly",
+      "user can order the available food",
+      
     ],
-    live: "#",
+    live: "https://github.com/Realida04/E-Commerce-Website",
     code: "#",
     tint: "blush",
     mock: "notes",
@@ -123,16 +119,16 @@ export const projects: Project[] = [
 
 export const principles = [
   {
-    title: "Design to code",
-    body: "I design in Figma, then build it pixel for pixel in React and Next.js.",
+    title: "Passion for Development",
+    body: "I enjoy turning ideas into functional, user-friendly web experiences. I’m passionate about frontend development and continuously improving my skills in React, Next.js, and modern web technologies.",
   },
   {
-    title: "Hands-on experience",
-    body: "Built responsive React apps and integrated REST APIs as an intern at Inspire Nepal.",
+    title: "Learning & Growth",
+    body: "As an Information Technology student, I believe every challenge is an opportunity to learn. I’m expanding my knowledge of backend development, APIs, and database management to become a more versatile developer.",
   },
   {
-    title: "Always learning",
-    body: "Finishing my BIT at Purbanchal University while exploring .NET and Python.",
+    title: "Creativity & Problem-Solving",
+    body: "I love exploring creative ideas and finding practical solutions to problems. I aim to combine thoughtful design with clean, maintainable code to build meaningful digital experiences.",
   },
 ];
 
@@ -167,7 +163,7 @@ export const journey = [
     period: "Jan 2024 — Dec 2024",
     title: "Admin Assistant",
     org: "Focus",
-    body: "Assist in the feontdesk work.",
+    body: "Assist in frontdesk work.",
   },
   {
     period: "2022 — 2026",

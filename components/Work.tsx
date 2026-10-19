@@ -41,7 +41,7 @@ export default function Work() {
                   ))}
                 </ul>
 
-                <dl className="project-meta">
+                {/* <dl className="project-meta">
                   <div>
                     <dt>Role</dt>
                     <dd>{p.role}</dd>
@@ -50,7 +50,7 @@ export default function Work() {
                     <dt>Year</dt>
                     <dd>{p.year}</dd>
                   </div>
-                </dl>
+                </dl> */}
 
                 <ul className="tags" aria-label="Tech stack">
                   {p.stack.map((s) => (
@@ -61,20 +61,13 @@ export default function Work() {
                 <div className="project-links">
                   {p.live && (
                     <a href={p.live} className="link-arrow">
-                      Live site
+                     Github Link
                       <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M7 17 17 7M8 7h9v9" />
                       </svg>
                     </a>
                   )}
-                  {p.code && (
-                    <a href={p.code} className="link-arrow">
-                      Source code
-                      <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M7 17 17 7M8 7h9v9" />
-                      </svg>
-                    </a>
-                  )}
+                  
                 </div>
               </div>
             </article>
