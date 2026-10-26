@@ -8,12 +8,14 @@ export const profile = {
   availability: "Open to Frontend Developement",
   email: "bipanapariyar04@gmail.com",
   resume: "/bipanaPariyarResume.pdf",
+  link: "https://inspireuvic.org/project/team-genesis-mcds/",
   intro:
     "I'm a frontend developer and designer. I love designing in Figma and build in React and Next.js, turning ideas into responsive, user-friendly web apps.",
   socials: [
     { label: "GitHub", href: "https://github.com/Realida04" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/bipanapariyar" },
     { label: "Instagram", href: "https://www.instagram.com/__realida00/" },
+  
   ],
 };
 
@@ -156,6 +158,7 @@ export const journey = [
   {
     period: "Sept 2025 — Dec 2025",
     title: "Solution Developer (Intern)",
+    link: "view",
     org: "Inspire Nepal",
     body: "Developed responsive React applications, integrated REST APIs, and worked with SQL databases while gaining experience in .NET, Git, and collaborative software development."
   },

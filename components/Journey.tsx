@@ -27,7 +27,10 @@ export default function Journey() {
                 <h3>{j.title}</h3>
                 <span>{j.org}</span>
               </div>
+             <div >
               <p>{j.body}</p>
+              <a href="https://inspireuvic.org/project/team-genesis-mcds/" >{j.link}</a>
+              </div>
             </li>
           ))}
         </ol>
