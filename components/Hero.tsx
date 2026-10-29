@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { profile, stats } from "@/data/content";
+import { profile } from "@/data/content";
 import portrait from "@/public/bipanaa.jpg";
 
 export default function Hero() {

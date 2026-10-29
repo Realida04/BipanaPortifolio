@@ -106,7 +106,7 @@ export const projects: Project[] = [
     kicker: "Online Food Delivery App",
     description:
       "A Online based food delivery app, where the user can order their prefered food. ",
-    year: "",
+    
     stack: ["Next.js", "Tailwindcss"],
     highlights: [
       // "user can order the available food",
