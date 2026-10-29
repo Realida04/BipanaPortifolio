@@ -7,72 +7,72 @@ const L = ({ w, s }: { w: string; s?: "lg" | "sm" }) => (
   <span className={`m-line ${s ? `m-line-${s}` : ""}`} style={{ width: w }} />
 );
 
-function Dashboard() {
-  const bars = [38, 62, 48, 80, 56, 92, 70, 64, 86, 52, 74, 98];
-  return (
-    <div className="mk mk-dash">
-      <aside className="mk-side">
-        <span className="mk-logo" />
-        <L w="70%" />
-        <L w="55%" />
-        <L w="62%" />
-        <L w="48%" />
-      </aside>
-      <div className="mk-main">
-        <div className="mk-head">
-          <span className="mk-text">Good morning, Bipana 🌿</span>
-          <span className="mk-avatar" />
-        </div>
-        <div className="mk-tiles">
-          {[
-            ["Humidity", "68%"],
-            ["Light", "12h"],
-            ["Plants", "24"],
-          ].map(([k, v]) => (
-            <div key={k} className="mk-tile">
-              <span className="mk-k">{k}</span>
-              <span className="mk-v">{v}</span>
-            </div>
-          ))}
-        </div>
-        <div className="mk-chart">
-          {bars.map((h, i) => (
-            <span key={i} style={{ height: `${h}%` }} />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
+// function Dashboard() {
+//   const bars = [38, 62, 48, 80, 56, 92, 70, 64, 86, 52, 74, 98];
+//   return (
+//     <div className="mk mk-dash">
+//       <aside className="mk-side">
+//         <span className="mk-logo" />
+//         <L w="70%" />
+//         <L w="55%" />
+//         <L w="62%" />
+//         <L w="48%" />
+//       </aside>
+//       <div className="mk-main">
+//         <div className="mk-head">
+//           <span className="mk-text">Good morning, Bipana 🌿</span>
+//           <span className="mk-avatar" />
+//         </div>
+//         <div className="mk-tiles">
+//           {[
+//             ["Humidity", "68%"],
+//             ["Light", "12h"],
+//             ["Plants", "24"],
+//           ].map(([k, v]) => (
+//             <div key={k} className="mk-tile">
+//               <span className="mk-k">{k}</span>
+//               <span className="mk-v">{v}</span>
+//             </div>
+//           ))}
+//         </div>
+//         <div className="mk-chart">
+//           {bars.map((h, i) => (
+//             <span key={i} style={{ height: `${h}%` }} />
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
-function System() {
-  return (
-    <div className="mk mk-system">
-      <div className="mk-cell mk-type">
-        <span className="mk-aa">Aa</span>
-        <span className="mk-k">Instrument Serif · 72</span>
-      </div>
-      <div className="mk-cell mk-swatches">
-        {["var(--accent)", "#C9B8EE", "#F1DFA8", "#A9B8A0", "#1F1A1D"].map((c) => (
-          <span key={c} style={{ background: c }} />
-        ))}
-      </div>
-      <div className="mk-cell mk-buttons">
-        <span className="mk-btn">Primary</span>
-        <span className="mk-btn mk-btn-ghost">Ghost</span>
-      </div>
-      <div className="mk-cell mk-controls">
-        <span className="mk-toggle" />
-        <span className="mk-toggle mk-toggle-off" />
-        <span className="mk-check" />
-      </div>
-      <div className="mk-cell mk-input">
-        <span className="mk-k">Email</span>
-        <span className="mk-field">hello@lumen.ui</span>
-      </div>
-    </div>
-  );
-}
+// function System() {
+//   return (
+//     <div className="mk mk-system">
+//       <div className="mk-cell mk-type">
+//         <span className="mk-aa">Aa</span>
+//         <span className="mk-k">Instrument Serif · 72</span>
+//       </div>
+//       <div className="mk-cell mk-swatches">
+//         {["var(--accent)", "#C9B8EE", "#F1DFA8", "#A9B8A0", "#1F1A1D"].map((c) => (
+//           <span key={c} style={{ background: c }} />
+//         ))}
+//       </div>
+//       <div className="mk-cell mk-buttons">
+//         <span className="mk-btn">Primary</span>
+//         <span className="mk-btn mk-btn-ghost">Ghost</span>
+//       </div>
+//       <div className="mk-cell mk-controls">
+//         <span className="mk-toggle" />
+//         <span className="mk-toggle mk-toggle-off" />
+//         <span className="mk-check" />
+//       </div>
+//       <div className="mk-cell mk-input">
+//         <span className="mk-k">Email</span>
+//         <span className="mk-field">hello@lumen.ui</span>
+//       </div>
+//     </div>
+//   );
+// }
 
 function Travel() {
   return (
@@ -127,8 +127,7 @@ function Notes() {
 }
 
 const variants: Record<MockVariant, () => React.JSX.Element> = {
-  dashboard: Dashboard,
-  system: System,
+  
   travel: Travel,
   notes: Notes,
 };

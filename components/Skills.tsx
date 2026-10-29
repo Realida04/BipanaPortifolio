@@ -13,7 +13,7 @@ export default function Skills() {
               The tools behind the <em>craft</em>
             </>
           }
-          aside={<p>A modern, battle-tested stack chosen for speed, accessibility and joy.</p>}
+          aside={<p>.</p>}
         />
 
         <div className="skills-grid">

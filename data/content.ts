@@ -5,7 +5,7 @@ export const profile = {
   firstName: "Bipana",
   role: "Frontend Software Engineer",
   location: "Kathmandu, Nepal",
-  availability: "Open to Frontend Developement",
+  availability: "Open to  Work",
   email: "bipanapariyar04@gmail.com",
   resume: "/bipanaPariyarResume.pdf",
   link: "https://inspireuvic.org/project/team-genesis-mcds/",
@@ -19,12 +19,12 @@ export const profile = {
   ],
 };
 
-export const stats = [
-  { value: "1", label: " year Experience in Development" },
-  { value: "5+", label: "Projects created" },
-  { value: "1.5", label: "years building Websites. " },
+// export const stats = [
+//   { value: "1", label: " year Experience in Development" },
+//   { value: "5+", label: "Projects created" },
+//   { value: "1.5", label: "years building Websites. " },
   
-];
+// ];
 
 export const marquee = [
   "React.js",
@@ -36,7 +36,7 @@ export const marquee = [
   "HTML/CSS",
 ];
 
-export type MockVariant = "dashboard" | "system" | "travel" | "notes";
+export type MockVariant =  "travel" | "notes";
 
 export type Project = {
   title: string;
@@ -51,39 +51,39 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    title: "Food Delivery App",
-    kicker: "Plant-care analytics dashboard",
-    description:
-      "A app where the user can view the food available and Order it.",
-    year: "2026",
-    stack: ["Next.js", "TypeScript", "Tailwind"],
-    highlights: [
-      "Reduced dashboard load time by 42% with route-level code splitting",
-      "Fully keyboard-navigable charts with screen-reader summaries",
-    ],
-    live: "https://github.com/Realida04/E-Commerce-Website",
+  // {
+  //   title: "Food Delivery App",
+  //   kicker: "Plant-care analytics dashboard",
+  //   description:
+  //     "A app where the user can view the food available and Order it.",
+  //   year: "2026",
+  //   stack: ["Next.js", "TypeScript", "Tailwind"],
+  //   highlights: [
+  //     "Reduced dashboard load time by 42% with route-level code splitting",
+  //     "Fully keyboard-navigable charts with screen-reader summaries",
+  //   ],
+  //   live: "https://github.com/Realida04/E-Commerce-Website",
     
-    tint: "sage",
-    mock: "dashboard",
-  },
-  {
-    title: "Lumen UI",
-    kicker: "Design system & component library",
-    description:
-      "A themeable component library of 40+ accessible primitives, documented in Storybook and published to npm — the single source of truth for a product team’s UI.",
- 
-    year: "2025",
-    stack: ["React", "TypeScript", "Storybook", "Radix"],
-    highlights: [
-      "Design tokens synced from Figma to code",
-      "WCAG 2.2 AA across every component, tested with axe",
-    ],
-    live: "https://github.com/Realida04/E-Commerce-Website",
-    code: "#",
-    tint: "lilac",
-    mock: "system",
-  },
+  //   tint: "sage",
+  //   mock: "dashboard",
+  // },
+      // {
+      //   title: "Lumen UI",
+      //   kicker: "Design system & component library",
+      //   description:
+      //     "A themeable component library of 40+ accessible primitives, documented in Storybook and published to npm — the single source of truth for a product team’s UI.",
+    
+      //   year: "2025",
+      //   stack: ["React", "TypeScript", "Storybook", "Radix"],
+      //   highlights: [
+      //     "Design tokens synced from Figma to code",
+      //     "WCAG 2.2 AA across every component, tested with axe",
+      //   ],
+      //   live: "https://github.com/Realida04/E-Commerce-Website",
+      //   code: "#",
+      //   tint: "lilac",
+      //   mock: "system",
+      // },
   {
     title: "Jadoo",
     kicker: " Static Travel Website ",
@@ -93,8 +93,8 @@ export const projects: Project[] = [
  
     stack: ["Next.js", "Tailwind.css"],
     highlights: [
-      "Shared-element page transitions with zero layout shift",
-      "Checkout completion improved in usability tests",
+      // "Shared-element page transitions with zero layout shift",
+      // "Checkout completion improved in usability tests",
     ],
     live: "https://github.com/Realida04/TravelWebsite",
     code: "#",
@@ -109,7 +109,7 @@ export const projects: Project[] = [
     year: "",
     stack: ["Next.js", "Tailwindcss"],
     highlights: [
-      "user can order the available food",
+      // "user can order the available food",
       
     ],
     live: "https://github.com/Realida04/E-Commerce-Website",
@@ -145,9 +145,10 @@ export const skills = [
   },
   
   {
-    group: "Version Control",
-    items: [ "Git & GitHub"],         
+    group: " Version Control",
+    items: [ ,"Git & GitHub"],         
   },
+  
   {
     group: "Learning & Exposure",
     items: [".NET", "python"],

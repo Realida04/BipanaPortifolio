@@ -60,14 +60,14 @@ export default function Hero() {
       </div>
 
       <div className="container">
-        <dl className="stats">
+        {/* <dl className="stats">
           {stats.map((s, i) => (
             <div key={s.label} className="stat reveal text-center " style={{ "--d": `${i * 80}ms` } as React.CSSProperties}>
               <dt>{s.label}</dt>
               <dd>{s.value}</dd>
             </div>
           ))}
-        </dl>
+        </dl> */}
       </div>
     </section>
   );
