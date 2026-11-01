@@ -167,13 +167,13 @@ export const journey = [
     period: "Jan 2024 — Dec 2024",
     title: "Admin Assistant",
     org: "Focus",
-    body: "Assist in frontdesk work.",
+    body: "Managed administrative tasks, coordinated schedules, and supported team operations, enhancing organizational efficiency and communication within the company.",
   },
   {
     period: "2022 — 2026",
     title: "Bachelor in Information Technology",
     org: "Purbanchal University",
-    body: "Focused on human-computer interaction and web technologies. Led the college tech club’s design team.",
+    body: "I am currently pursuing a Bachelor's degree in Information Technology.",
   },
 ];
 
